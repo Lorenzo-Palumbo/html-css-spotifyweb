@@ -92,7 +92,43 @@ main{
 }
 
 main h2{
-    color: white
+    color: white;
+    padding-bottom: 30px;
+    padding-top: 60px
+}
+
+.row{
+    flex-wrap: wrap;
+}
+
+.row img{
+    width: 243px;
+    padding-right: 20px
+}
+
+.circle img{
+    border-radius: 50%
+}
+
+.circle p{
+    text-align: center;
+}
+
+.row p{
+    color: white;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px
+}
+
+.row small{
+    color: #919496;
+    padding-bottom: 10px
+}
+
+.mini-cont{
+    width: 200px;
+    padding-bottom: 10px
 }
 
 footer{
@@ -137,7 +173,7 @@ footer{
 }
 
 .left img{
-    width: 10%
+    width: 60px
 }
 
 .center{
