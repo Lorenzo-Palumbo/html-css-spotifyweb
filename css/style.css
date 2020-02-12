@@ -18,13 +18,16 @@ aside{
     flex-direction: column;
 }
 
+i{
+    color: white
+}
+
 .menu{
     flex-direction: column;
     align-items: center;
 }
 
-i{
-    color: white;
+.menu i,.profile i{
     font-size: x-large;
     padding-bottom: 20px
 }
@@ -66,6 +69,36 @@ header .upgrade{
     width: calc(100% - 40px)
 }
 
+main{
+    background-color: #0b0f23;
+    width: 100%;
+    height: calc(100vh - 90px);
+    padding-top: 60px;
+    overflow-y: auto;
+    padding-left: 20px
+}
+
+.menu-main{
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.menu-main a{
+    color: #919496;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    padding-top: 20px
+}
+
+main h2{
+    color: white
+}
+
+footer{
+    justify-content: space-between;
+}
+
 .play{
     width: 100%;
     height: 90px;
@@ -73,12 +106,13 @@ header .upgrade{
 }
 
 .left{
-    align-items: center
+    align-items: center;
+    padding-left: 10px
 }
 
 .musicname{
     flex-direction: column;
-    padding-left: 10px
+    padding-left: 10px;
 }
 
 .musicname h2{
@@ -96,20 +130,68 @@ header .upgrade{
 }
 
 .icons i{
-    padding-bottom: 0;
+    padding-bottom: 2px;
     padding-left: 20px;
     color: #919496;
     font-size: 16px
 }
 
-main{
-    background-color: blue;
-    width: 100%;
-    height: calc(100vh - 90px);
-    padding-top: 60px;
-    overflow-y: auto;
-}
-
 .left img{
     width: 10%
+}
+
+.center{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-up{
+    align-items: center;
+}
+
+.center-up i{
+    padding: 0 20px
+}
+
+.fa-play-circle{
+    font-size: 40px;
+    margin-bottom: 10px
+}
+
+.center.down{
+
+}
+
+.time::after{
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 4px;
+    background-color: #919496;
+    position: relative;
+    bottom: 5px;
+    border-radius: 17px;
+    margin-left: 8px;
+    margin-right: 5px
+}
+
+.fa-volume-up::after{
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 4px;
+    background-color: #919496;
+    position: relative;
+    bottom: 5px;
+    border-radius: 17px;
+    margin-left: 8px;
+    margin-right: 5px
+}
+.right{
+    align-items: center;
+}
+
+.right i{
+    padding-left: 15px;
 }
