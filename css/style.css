@@ -31,7 +31,7 @@ i{
 }
 
 .menu i,.profile i{
-    font-size: x-large;
+    font-size: 20px;
     padding-bottom: 20px
 }
 
@@ -114,12 +114,28 @@ main h2{
 }
 
 .row img{
-    width: 243px;
+    width: 227px;
     padding-right: 20px
 }
 
-.row img:hover{
-    background-color: black
+.hover-play:hover img{
+    opacity: 0.1;
+}
+
+.hover-play{
+    position: relative;
+}
+
+.hover-play:hover i{
+    display: block;
+}
+
+.hover-play i{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: none;
 }
 
 .circle img{
@@ -214,8 +230,8 @@ footer{
     margin-bottom: 10px
 }
 
-.center.down{
-
+.center-down span{
+    color: white
 }
 
 .time::after{
@@ -286,8 +302,6 @@ footer{
         width: calc(100% - 112px)
     }
 
-    footer
-
     .right{
         display: none;
     }
@@ -308,7 +322,7 @@ footer{
     }
 
     .menu-sm i{
-        font-size: x-large;
+        font-size: 20px;
         color: #919496;
     }
 
@@ -330,8 +344,14 @@ footer{
         margin-bottom: 20px
     }
 
+    .menu-sm h2{
+        color: white;
+        font-size: 14px;
+        padding-bottom: 10px
+    }
+
     .playlist p{
-        padding-bottom: 20px
+        padding-bottom: 15px
     }
 
     .profile{
@@ -342,30 +362,150 @@ footer{
         align-items: flex-start;
         display: flex;
         flex-direction: column;
-    }
-
-    .profile-sm{
         font-size: x-large;
         color: #919496;
+    }
+
+    .profile-icon-sm{
+        border-bottom: 1px solid #919496
     }
 
     .profile-icon-sm p{
         color: #919496;
         font-size: 12px;
         padding-left: 10px;
+        float: right;
+        transform: translate(0px, 9px);
     }
 
     .profile-icon-sm, .profiletwo-icon-sm{
-        padding-bottom: 10px
+        padding-bottom: 2px;
+        align-items: center;
+        width: 100%;
+        padding-top: 7px;
+    }
+
+    .profiletwo-icon-sm i{
+        float: left;
     }
 
     .profiletwo-icon-sm p{
         color: white;
         font-size: 15px;
-        padding-left: 10px
+        padding-left: 10px;
+        float: right;
+        transform: translate(23px, -30px);
     }
 
     .profile-icon-sm i{
-        font-size: medium
+        font-size: medium;
+        color: #919496
+    }
+}
+
+@media all and (min-width:992px){
+    aside{
+        width: 120px;
+        align-items: flex-start;
+    }
+
+    header{
+        width: calc(100% - 112px)
+    }
+
+    .center{
+        padding-left: 10px;
+        padding-right: 10px
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-sm{
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-sm i{
+        font-size: 20px;
+        color: #919496;
+    }
+
+    .menu-sm img{
+        display:block;
+        width: 100px;
+        margin-top: 30px;
+        margin-bottom: 30px
+    }
+
+    .menu-sm p{
+        color: #919496;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    .icon-sm{
+        align-items: center;
+        margin-bottom: 20px
+    }
+
+    .menu-sm h2{
+        color: white;
+        font-size: 14px;
+        padding-bottom: 10px
+    }
+
+    .playlist p{
+        padding-bottom: 15px
+    }
+
+    .profile{
+        display: none;
+    }
+
+    .profile-sm{
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        font-size: x-large;
+        color: #919496;
+    }
+
+    .profile-icon-sm{
+        border-bottom: 1px solid #919496
+    }
+
+    .profile-icon-sm p{
+        color: #919496;
+        font-size: 12px;
+        padding-left: 10px;
+        float: right;
+        transform: translate(0px, 9px);
+    }
+
+    .profile-icon-sm, .profiletwo-icon-sm{
+        padding-bottom: 2px;
+        align-items: center;
+        width: 100%;
+        padding-top: 7px;
+    }
+
+    .profiletwo-icon-sm i{
+        float: left;
+    }
+
+    .profiletwo-icon-sm p{
+        color: white;
+        font-size: 15px;
+        padding-left: 10px;
+        float: right;
+        transform: translate(23px, -30px);
+    }
+
+    .profile-icon-sm i{
+        font-size: medium;
+        color: #919496
     }
 }
